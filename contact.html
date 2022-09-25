@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>Contact Page</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="header">
+	<nav>
+		<a href="contact.html"><img src="images/logo.png"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hidemenu()"></i>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="feedback.html">Feedback</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showmenu()"></i>
+	</nav>
+<section class="contact">
+	<div class="content">
+		<h2>Contact Us</h2>
+		<p>Thank you for your interest in our products and services. For any concerns, queries, and reservations please fill out the form below.</p>
+	</div>
+	<div class="container">
+		<div class="contactInfo">
+			<div class="box">
+				<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+				<div class="text">
+					<h4>Address</h4>
+					<p>#9 Mahogany St.<br>Greenland Phase 2 <br> Nangka Marikina City</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+				<div class="text">
+					<h4>Phone</h4>
+					<p>(02) 8995 0699</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+				<div class="text">
+					<h4>Email</h4>
+					<p>JRMRMilktea10@gmail.com</p>
+				</div>
+			</div>
+		</div>
+		<div class="contactForm">
+			<form>
+				<h2>Send Message</h2>
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span>Full Name</span>
+				</div>
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span>Email</span>
+				</div>
+				<div class="inputBox">
+					<textarea required="required"></textarea>
+					<span>Type your Message...</span>
+				</div>
+				<div class="inputBox">
+					<input type="submit" name="" value="Send">
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+<!------ JavaScript for Toogle Menu ------->
+<script>
+	
+	var navLinks = document.getElementById('navLinks');
+	function showmenu(){
+		navLinks.style.right = "0";
+	}
+	function hidemenu(){
+		navLinks.style.right = "-200px";
+	}
+
+</script>
+
+</body>
+</html> 

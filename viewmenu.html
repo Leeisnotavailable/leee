@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>View Menu</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+	<nav>
+		<a href="viewmenu.html"><img src="images/logo.png"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hidemenu()"></i>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="feedback.html">Feedback</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showmenu()"></i>
+	</nav>
+<div class="menu">
+	<div class="heading">
+		<h1>JRMR's Milktea</h1>
+		<h3>&mdash; Menu &mdash; </h3>
+	</div>
+	<div class="food-items">
+		<img src="images/menu.png">
+		<div class="details">
+			<div class="details-sub">
+				<h5>JRMR's Menu</h5>
+				<h5 class="price">₱100</h5>
+			</div>
+			<p>Asian, Milk Tea, Beverages</p>
+			<button>Order Now</button>
+		</div>
+    </div>
+</div>
+
+<!------ JavaScript for Toogle Menu ------->
+<script>
+	
+	var navLinks = document.getElementById('navLinks');
+	function showmenu(){
+		navLinks.style.right = "0";
+	}
+	function hidemenu(){
+		navLinks.style.right = "-200px";
+	}
+	
+</script>
+
+</body>
+</html>
